@@ -53,4 +53,24 @@ async function submitData() {
   document.getElementById("amount").value = "";
   document.getElementById("note").value = "";
   document.getElementById("image").value = "";
+  document.getElementById("image").addEventListener("change", function () {
+  const preview = document.getElementById("preview");
+  preview.innerHTML = "";
+
+  const files = this.files;
+
+  if (!files || files.length === 0) {
+    preview.textContent = "尚未選擇圖片";
+    return;
+  }
+
+  for (const file of files) {
+    const img = document.createElement("img");
+    img.src = URL.createObjectURL(file);
+    img.style.width = "100%";
+    img.style.marginTop = "10px";
+    img.style.borderRadius = "12px";
+    preview.appendChild(img);
+  }
+});
 }
