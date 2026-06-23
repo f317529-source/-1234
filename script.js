@@ -1,4 +1,4 @@
-const API_URL = "https://script.google.com/macros/s/AKfycbzQX6va2_6VzbV6hiN5O6gMP4_H2Cmx9MQsM8W8Ky9CcfwvPDXzRyuQ7b9iv6pVjaU/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbwew7BJbO215lD_6fDu3jpVMlsPKNC1_622hGI3f0LDd6laUEVsPh8bZaZ_Obog8Owf/exec";
 
 const imageInput = document.getElementById("image");
 const preview = document.getElementById("preview");
