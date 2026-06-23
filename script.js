@@ -1,4 +1,4 @@
-const API_URL = "你的 Apps Script /exec 網址";
+const API_URL = "https://script.google.com/macros/s/AKfycbwew7BJbO215lD_6fDu3jpVMlsPKNC1_622hGI3f0LDd6laUEVsPh8bZaZ_Obog8Owf/exec";
 
 async function fileToBase64(file) {
   return new Promise((resolve, reject) => {
