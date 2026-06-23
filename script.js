@@ -7,7 +7,7 @@ imageInput.addEventListener("change", () => {
   const file = imageInput.files[0];
   if (!file) return preview.textContent = "尚未選擇圖片";
   const reader = new FileReader();
-  reader.onload = () => preview.innerHTML = `<img src="${reader.result}" alt="結圖預覽">`;
+  reader.onload = () => preview.innerHTML = `<img src="${reader.result}" alt="截圖預覽">`;
   reader.readAsDataURL(file);
 });
 
@@ -28,7 +28,7 @@ async function submitData() {
   const note = document.getElementById("note").value.trim();
   const file = imageInput.files[0];
 
-  if (!name || !amount || !file) return msg.textContent = "請填收光人員、光數，並上傳結圖。";
+  if (!name || !amount || !file) return msg.textContent = "請填收光人員、光數，並上傳截圖。";
 
   btn.disabled = true; msg.textContent = "送出中...";
   try {
