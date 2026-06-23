@@ -1,0 +1,54 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Microsoft JhengHei", system-ui, sans-serif;
+  color: #fff;
+  background:
+    radial-gradient(circle at top left, rgba(216,180,254,.35), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(251,191,36,.18), transparent 35%),
+    linear-gradient(135deg, #171120, #30223f 55%, #120f18);
+}
+.page { min-height: 100vh; display: grid; place-items: center; padding: 22px; }
+.card {
+  width: 100%; max-width: 460px; padding: 28px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 28px;
+  background: rgba(255,255,255,.10);
+  box-shadow: 0 24px 70px rgba(0,0,0,.38);
+  backdrop-filter: blur(18px);
+}
+.badge {
+  width: fit-content; padding: 7px 12px; border-radius: 999px;
+  background: rgba(216,180,254,.18); color: #ead7ff;
+  font-size: 12px; letter-spacing: 2px; border: 1px solid rgba(216,180,254,.35);
+}
+h1 { margin: 16px 0 6px; font-size: 34px; }
+.sub { margin: 0 0 24px; color: rgba(255,255,255,.72); line-height: 1.7; }
+label { display: block; margin: 16px 0 8px; font-weight: 700; color: #f5eaff; }
+input, textarea {
+  width: 100%; padding: 14px 15px; border: 1px solid rgba(255,255,255,.18);
+  border-radius: 16px; background: rgba(0,0,0,.24); color: #fff; font-size: 16px;
+  outline: none;
+}
+input:focus, textarea:focus { border-color: #d8b4fe; box-shadow: 0 0 0 4px rgba(216,180,254,.15); }
+textarea { min-height: 90px; resize: vertical; }
+.preview {
+  margin-top: 12px; min-height: 54px; border: 1px dashed rgba(255,255,255,.25);
+  border-radius: 16px; display: grid; place-items: center; color: rgba(255,255,255,.65);
+  overflow: hidden; background: rgba(0,0,0,.18);
+}
+.preview img { width: 100%; display: block; }
+button {
+  width: 100%; margin-top: 22px; padding: 15px 18px; border: 0; border-radius: 18px;
+  background: linear-gradient(135deg, #e9d5ff, #facc15);
+  color: #211428; font-size: 17px; font-weight: 900; cursor: pointer;
+  box-shadow: 0 12px 30px rgba(250,204,21,.18);
+}
+button:disabled { opacity: .55; cursor: not-allowed; }
+.msg { text-align: center; min-height: 24px; color: #fef3c7; }
+.table-card { max-width: 900px; }
+table { width:100%; border-collapse: collapse; margin-top:18px; overflow:hidden; border-radius:16px; }
+th,td { padding:12px; border-bottom:1px solid rgba(255,255,255,.12); text-align:left; }
+th { color:#fef3c7; }
+a { color:#e9d5ff; }
