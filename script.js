@@ -1,4 +1,4 @@
-const API_URL = "這裡貼上你的 Apps Script Web App 網址";
+const API_URL = "https://script.google.com/macros/s/AKfycbzQX6va2_6VzbV6hiN5O6gMP4_H2Cmx9MQsM8W8Ky9CcfwvPDXzRyuQ7b9iv6pVjaU/exec";
 
 const imageInput = document.getElementById("image");
 const preview = document.getElementById("preview");
