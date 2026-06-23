@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>光數登記</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <div class="tag">LIGHT RECORD</div>
+      <h1>光數登記</h1>
+      <p class="sub">上傳結圖、填寫光數，資料會自動進試算表。</p>
+
+      <label>收光人員</label>
+      <input id="name" type="text" placeholder="例如：雲鷺" autocomplete="off" />
+
+      <label>光數</label>
+      <input id="amount" type="number" placeholder="例如：900" min="1" />
+
+      <label>備註</label>
+      <textarea id="note" placeholder="可不填"></textarea>
+
+      <label>結圖上傳</label>
+      <input id="image" type="file" accept="image/*" multiple />
+
+      <div id="preview" class="preview empty">尚未選擇圖片</div>
+
+      <button id="submitBtn" onclick="submitData()">送出登記</button>
+      <div id="statusMsg" class="status-msg"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
