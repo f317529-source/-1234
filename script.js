@@ -1,5 +1,5 @@
 // 這裡換成你的 Apps Script Web App 網址，必須是 /exec 結尾
-const API_URL = "https://script.google.com/macros/s/AKfycbwew7BJbO215lD_6fDu3jpVMlsPKNC1_622hGI3f0LDd6laUEVsPh8bZaZ_Obog8Owf/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzcMrVXd6SQRmCuuK22nbd04Z8p_EviX3voJ9r2ZICbdwR6WIYNvpdXwRt0I-UcSoa2/exec";
 
 const imageInput = document.getElementById("image");
 const preview = document.getElementById("preview");
